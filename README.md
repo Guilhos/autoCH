@@ -42,7 +42,7 @@ Existe apenas 1 função que utiliza essa API, a update_values(service, spreadsh
 - service: Necessário para acessar informações da API
 - spreadsheets_id: Endereço da nossa planilha
 - range_name: Intervalo da planilha que queremos alterar
-- value_input_option: Opção de entrada de valores (você pode procurar por outras opções clicando [aqui](https://developers.google.com/sheets/api/reference/rest/v4/ValueInputOption?hl=pt-br)
+- value_input_option: Opção de entrada de valores (você pode procurar por outras opções clicando [aqui](https://developers.google.com/sheets/api/reference/rest/v4/ValueInputOption?hl=pt-br))
 - Os outros são autoexplicativos!
 
 Na planilha:

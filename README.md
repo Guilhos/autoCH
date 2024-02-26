@@ -23,6 +23,10 @@ OBS..: ⚠️ = SUJEITO A ALTERAÇÃO
 
 É um simples script em Python, deve rodar em qualquer computador sem muitos problemas (os únicos que encontrei foram por conta das credenciais). Caso esteja tendo o mesmo problema me contate!
 
+Antes das APIS é necessário instalar as dependências do Google, coloque o seguinte código no seu terminal:
+
+$ pip3 install --upgrade google-api-python-client google-auth-httplib2 google-auth-oauthlib
+
 ### Autenticação:
 Existem 2 funções de autenticação, gmail_authenticate() e sheet_authenticate(). Uma vez que as credenciais estejam no seu workspace (pra quem estiver usando o VS Code) elas devem conseguir rodar sem muitos problemas! Após as suas primeiras execuções serão criados 2 arquivos no workspace, token.pickle (GMAIL) e token1.pickle (SHEETS), eles irão servir para o google saber que você deu permissão ao programa para utilizar dos seus dados.
 

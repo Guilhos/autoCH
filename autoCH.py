@@ -156,7 +156,7 @@ def read_message(service, message):
     print("="*50)
 
 # Colocar informações na SPREADSHEET
-def update_values(service, spreadsheet_id, range_name, value_input_option, _values, remetente, data, Entrada, Saida):
+def update_values(service, spreadsheet_id, range_name, value_input_option, remetente, data, Entrada, Saida):
     try:
         values = [[remetente],[data],[Entrada],[Saida]]
         body = {"majorDimension": "COLUMNS", "values": values}
@@ -200,7 +200,7 @@ print(f"Found {len(results)} results.")
 for i in range(len(results)-1, -1, -1):
     msg = results[i]
     info = read_message(gmail_serv, msg)
-    update_values(sheet_serv, SPREADSHEET_ID, RANGE, "USER_ENTERED",[[], []], info[0], info[1], info[2], info[3])
+    update_values(sheet_serv, SPREADSHEET_ID, RANGE, "USER_ENTERED", info[0], info[1], info[2], info[3])
  
 # Deleta o EMAIL para que não seja lido 2 vezes       
 delete_messages(gmail_serv, "Hora de entrada")

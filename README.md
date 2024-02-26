@@ -26,6 +26,8 @@ OBS..: ⚠️ = SUJEITO A ALTERAÇÃO
 ### Autenticação:
 Existem 2 funções de autenticação, gmail_authenticate() e sheet_authenticate(). Uma vez que as credenciais estejam no seu workspace (pra quem estiver usando o VS Code) elas devem conseguir rodar sem muitos problemas! Após as suas primeiras execuções serão criados 2 arquivos no workspace, token.pickle (GMAIL) e token1.pickle (SHEETS), eles irão servir para o google saber que você deu permissão ao programa para utilizar dos seus dados.
 
+❗PARA FUNCIONAR VOCÊ PRECISA TER AS CREDENCIAIS ❗
+
 ### API GMAIL
 Existem 4 funções que utilizam essa API
 

@@ -16,6 +16,7 @@ Esse formato é necessário, pois o programa NÃO tem algoritmo de busca para os
 As informações: REMETENTE, DATA, HORA DE ENTRADA e HORA DE SAÍDA serão enviados ao esse [SPREADSHEET](https://docs.google.com/spreadsheets/d/136BgdSmEmHdqMHRvK0dOsgXYjqKdAyicNEtGlMGLw3E/edit#gid=0) ⚠️
 
 OBS.: Caso não esteja conseguindo acessar o SPREADSHEET, pode ser que você não faça parte da organização OPTIMUS Jr. ou eu atualizei o SPREADSHEET e esqueci de mudar esse texto 😝
+
 OBS..: ⚠️ = SUJEITO A ALTERAÇÃO
 
 ## O CÓDIGO

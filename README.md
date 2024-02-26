@@ -25,7 +25,7 @@ OBS..: ⚠️ = SUJEITO A ALTERAÇÃO
 
 Antes das APIS é necessário instalar as dependências do Google, coloque o seguinte código no seu terminal:
 
-$ pip3 install --upgrade google-api-python-client google-auth-httplib2 google-auth-oauthlib
+<img src="https://cdn.discordapp.com/attachments/1105298491078606941/1211780468366647357/image.png?ex=65ef7181&is=65dcfc81&hm=5adedb59c1b1614d79e8d62211e26bb9f2c91e3a624664d9234e01e32f7b6bef&" alt="$ pip3 install --upgrade google-api-python-client google-auth-httplib2 google-auth-oauthlib">
 
 ### Autenticação:
 Existem 2 funções de autenticação, gmail_authenticate() e sheet_authenticate(). Uma vez que as credenciais estejam no seu workspace (pra quem estiver usando o VS Code) elas devem conseguir rodar sem muitos problemas! Após as suas primeiras execuções serão criados 2 arquivos no workspace, token.pickle (GMAIL) e token1.pickle (SHEETS), eles irão servir para o google saber que você deu permissão ao programa para utilizar dos seus dados.

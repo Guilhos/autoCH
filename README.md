@@ -23,7 +23,7 @@ OBS..: ⚠️ = SUJEITO A ALTERAÇÃO
 
 É um simples script em Python, deve rodar em qualquer computador sem muitos problemas (os únicos que encontrei foram por conta das credenciais). Caso esteja tendo o mesmo problema me contate!
 
-Antes das APIS é necessário instalar as dependências do Google, coloque o seguinte código no seu terminal:
+Antes das API's é necessário instalar as dependências do Google, coloque o seguinte código no seu terminal:
 
 <img src="https://cdn.discordapp.com/attachments/1105298491078606941/1211780468366647357/image.png?ex=65ef7181&is=65dcfc81&hm=5adedb59c1b1614d79e8d62211e26bb9f2c91e3a624664d9234e01e32f7b6bef&" alt="$ pip3 install --upgrade google-api-python-client google-auth-httplib2 google-auth-oauthlib">
 

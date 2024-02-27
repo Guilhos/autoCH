@@ -1,6 +1,7 @@
 import os
 import pickle
 import google.auth
+import webbrowser
 from googleapiclient.discovery import build
 from google_auth_oauthlib.flow import InstalledAppFlow
 from google.auth.transport.requests import Request
@@ -189,19 +190,22 @@ def clean(text):
 
 ### PROGRAMA ###
 
-sheet_serv = sheet_authenticate()
-gmail_serv = gmail_authenticate()
+def prog():
+    lista=[]
+    sheet_serv = sheet_authenticate()
+    gmail_serv = gmail_authenticate()
 
-# Aqui se coloca a QUERY
-results = search_messages(gmail_serv, "Hora de entrada")
-print(f"Found {len(results)} results.")
+    # Aqui se coloca a QUERY
+    results = search_messages(gmail_serv, "Hora de entrada")
+    print(f"Found {len(results)} results.")
+    if len(results) == 0:
+        return lista
 
-# Aqui se vai ler o EMAIL e coloca-lo no SPREADSHEET
-for i in range(len(results)-1, -1, -1):
-    msg = results[i]
-    info = read_message(gmail_serv, msg)
-    update_values(sheet_serv, SPREADSHEET_ID, RANGE, "USER_ENTERED", info[0], info[1], info[2], info[3])
- 
-# Deleta o EMAIL para que não seja lido 2 vezes       
-delete_messages(gmail_serv, "Hora de entrada")
-
+    # Aqui se vai ler o EMAIL e coloca-lo no SPREADSHEET
+    for i in range(len(results)-1, -1, -1):
+        msg = results[i]
+        info = read_message(gmail_serv, msg)
+        lista.append(info)
+        update_values(sheet_serv, SPREADSHEET_ID, RANGE, "USER_ENTERED", info[0], info[1], info[2], info[3])
+    
+    return lista

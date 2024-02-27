@@ -35,23 +35,47 @@ Existem 2 funções de autenticação, gmail_authenticate() e sheet_authenticate
 ### API GMAIL
 Existem 4 funções que utilizam essa API
 
-  - search_messages(service, query): Utilizado para procurar o EMAIL que contenha determinado texto (query). Retorna uma lista contendo os EMAILS criptografados em BYTECODE
-  - read_message(service, message): Utilizado para obter as informações do EMAIL, recebe um EMAIL criptografado (message) e retorna uma lista contendo REMETENTE, DATA, ENTRADA e SAÍDA, respectivamente.
-  - delete_message(service, query): Utilizado para deletar o EMAIL que contenha determinado texto (query). Importante para não lermos o mesmo EMAIL repetidas vezes!
-  - clear(text): Utilizado dentro do read_message(), para limpar o texto e criar uma nova pasta quando se lê o SUBJECT. (Também não entendi direito pra que funciona, mas funciona 😁😁)
+  🔹search_messages(service, query) ▶️ Utilizado para procurar o EMAIL que contenha determinado texto (query). Retorna uma lista contendo os EMAILS criptografados em BYTECODE
+  
+  🔹read_message(service, message) ▶️ Utilizado para obter as informações do EMAIL, recebe um EMAIL criptografado (message) e retorna uma lista contendo REMETENTE, DATA, ENTRADA e SAÍDA, respectivamente.
+  
+  🔹delete_message(service, query) ▶️ Utilizado para deletar o EMAIL que contenha determinado texto (query). Importante para não lermos o mesmo EMAIL repetidas vezes!
+  
+  🔹clear(text) ▶️ Utilizado dentro do read_message(), para limpar o texto e criar uma nova pasta quando se lê o SUBJECT. (Também não entendi direito pra que funciona, mas funciona 😁😁)
+  
 
 ### API GOOGLE SHEETS
 Existe apenas 1 função que utiliza essa API, a update_values(service, spreadsheets_id, range_name, value_input_option, remetente, data, Entrada, Saída). Agora para que serve cada parâmetro?
 
-- service: Necessário para acessar informações da API
-- spreadsheets_id: Endereço da nossa planilha
-- range_name: Intervalo da planilha que queremos alterar
-- value_input_option: Opção de entrada de valores (você pode procurar por outras opções clicando [aqui](https://developers.google.com/sheets/api/reference/rest/v4/ValueInputOption?hl=pt-br))
-- Os outros são autoexplicativos!
+  🔹service ▶️ Necessário para acessar informações da API
+  
+  🔹spreadsheets_id ▶️ Endereço da nossa planilha
+
+  🔹range_name ▶️ Intervalo da planilha que queremos alterar
+  
+  🔹value_input_option ▶️ Opção de entrada de valores (você pode procurar por outras opções clicando [aqui](https://developers.google.com/sheets/api/reference/rest/v4/ValueInputOption?hl=pt-br))
+  
+  🔹Os outros são autoexplicativos!
 
 Na planilha:
 
 <img src="https://cdn.discordapp.com/attachments/1105298491078606941/1211776911534067782/image.png?ex=65ef6e31&is=65dcf931&hm=fcb7c2a56d45ecabbad8f0b7312db2ac5d12a59688d8c18f18808936295763f0&" alt="Imagem dos Dados na Planilha">
+
+### GUI
+Foi utilizada a [Tkinter](https://docs.python.org/pt-br/3/library/tkinter.html) para a criação da interface do usuário, a interface em si é bem simples, consta com 4 botões:
+
+<img src="https://cdn.discordapp.com/attachments/1105299182899703888/1212047432427380787/image.png?ex=65f06a22&is=65ddf522&hm=9eeb55dc2afd098c0892b3f4daa9591ee8ee630120cf9e66def8c37ed8b4841f&" alt="GUI do Programa">
+
+  🔹Github ▶️ Abre uma janela no seu navegador padrão trazendo para esse github
+  
+  🔹Planilha ▶️ Abre uma janela no seu navegador padrão levando para a planilha
+  
+  🔹Deletar EMAILs ▶️ Executa a função delete_message()
+  
+  🔹ENVIAR DADOS ▶️ Executa o programa em si
+
+### EXECUTÁVEL
+O programa foi transformado em .exe utilizando o [pyinstaller](https://pyinstaller.org/en/stable/)!
 
 ## NFC
 

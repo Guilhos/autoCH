@@ -34,12 +34,12 @@ from google.oauth2.service_account import Credentials
 # Identificação da API do GMAIL
 SCOPES = ['https://mail.google.com/']
 # GMAIL utilizado
-our_email = 'horadesede@gmail.com'
+our_email = 'cargahoraria@optimusjr.com.br'
 
 # Identificação da API do SHEETS
 SCOPES1 = ["https://www.googleapis.com/auth/spreadsheets"]
 # O ID do SPREADSHEET.
-SPREADSHEET_ID = "136BgdSmEmHdqMHRvK0dOsgXYjqKdAyicNEtGlMGLw3E"
+SPREADSHEET_ID = "1-cOVrhnu8hNbmfhdCZPCJHeuV_mpEDnjn2NtcdlELfQ"
 # Células que serão alteradas
 RANGE = "A2:D"
 

@@ -5,7 +5,7 @@
 Computar a carga horária dos funcionários da Empresa Júnior [OPTIMUS Jr Controle e Automação](optimusjr.com.br)
 
 ## COMO FOI FEITO
-O programa se utiliza da [API Gmail](https://developers.google.com/gmail/api/guides?hl=pt-br) e da [API Google Sheets](https://developers.google.com/sheets/api/guides/concepts?hl=pt-br) do Google. Através dessas ferramentas, se colhe o email enviado para um GMAIL a minha escolha nesse caso, horadesede@gmail.com ⚠️
+O programa se utiliza da [API Gmail](https://developers.google.com/gmail/api/guides?hl=pt-br) e da [API Google Sheets](https://developers.google.com/sheets/api/guides/concepts?hl=pt-br) do Google. Através dessas ferramentas, se colhe o email enviado para um GMAIL a minha escolha nesse caso, cargahoraria@optimusjr.com.br
 
 Esse email deve seguir este formato específico:
 <div>
@@ -13,7 +13,7 @@ Esse email deve seguir este formato específico:
 </div>
 
 Esse formato é necessário, pois o programa NÃO tem algoritmo de busca para os horários, então se faz necessário que o texto seja estático!
-As informações: REMETENTE, DATA, HORA DE ENTRADA e HORA DE SAÍDA serão enviados ao esse [SPREADSHEET](https://docs.google.com/spreadsheets/d/136BgdSmEmHdqMHRvK0dOsgXYjqKdAyicNEtGlMGLw3E/edit#gid=0) ⚠️
+As informações: REMETENTE, DATA, HORA DE ENTRADA e HORA DE SAÍDA serão enviados ao esse [SPREADSHEET](https://docs.google.com/spreadsheets/d/1-cOVrhnu8hNbmfhdCZPCJHeuV_mpEDnjn2NtcdlELfQ) ⚠️
 
 OBS.: Caso não esteja conseguindo acessar o SPREADSHEET, pode ser que você não faça parte da organização OPTIMUS Jr. ou eu atualizei o SPREADSHEET e esqueci de mudar esse texto 😝
 
@@ -76,6 +76,15 @@ Foi utilizada a [Tkinter](https://docs.python.org/pt-br/3/library/tkinter.html) 
 
 ### EXECUTÁVEL
 O programa foi transformado em .exe utilizando o [pyinstaller](https://pyinstaller.org/en/stable/)!
+
+### ERROS
+Se você encontrou algum tipo de erro, verifique o console (ele abre junto com o executável). Os erros mais prováveis são:
+  
+  🔸As credenciais estão fora da pasta, incorretas ou desatualizadas
+  🔸Está utilizando o email incorreto na permissão das credenciais
+  🔸O email que você está utilizando não tem acesso a planilha
+
+Se encontrar outros erros além desses entre em contato!
 
 ## NFC
 

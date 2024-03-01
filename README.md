@@ -78,9 +78,9 @@ O programa foi transformado em .exe utilizando o [pyinstaller](https://pyinstall
 ### ERROS
 Se você encontrou algum tipo de erro, verifique o console (ele abre junto com o executável). Os erros mais prováveis são:
   
-  🔸As credenciais estão fora da pasta, incorretas ou desatualizadas
-  🔸Está utilizando o email incorreto na permissão das credenciais
-  🔸O email que você está utilizando não tem acesso a planilha
+🔸As credenciais estão fora da pasta, incorretas ou desatualizadas
+🔸Está utilizando o email incorreto na permissão das credenciais
+🔸O email que você está utilizando não tem acesso a planilha
 
 Se encontrar outros erros além desses entre em contato!
 

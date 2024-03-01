@@ -34,7 +34,7 @@ class Application:
         self.button3.pack(side=LEFT)
     
     def deletar(self, event):
-        autoCH.delete_messages
+        autoCH.delete_messages()
             
     def pg(self, event):
         dados = autoCH.prog()
